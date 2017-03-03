@@ -1,0 +1,12 @@
+{
+    "extends": [
+        "tslint:latest"
+    ],
+    "rules": {
+        "quotemark": [true, "single"],
+        "variable-name": [
+            true,
+            "allow-leading-underscore"
+        ]
+    }
+}

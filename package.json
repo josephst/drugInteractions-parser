@@ -1,0 +1,41 @@
+{
+  "name": "drug-interactions",
+  "version": "0.0.1",
+  "description": "Drug Interaction graph: data parsing",
+  "main": "js/app.js",
+  "scripts": {
+    "start": "node js/bin/www.js",
+    "test": "gulp test",
+    "test:watch": "gulp test:watch"
+  },
+  "ava": {
+    "files": [
+      "js/test/**",
+      "!js/test/helpers/**",
+      "!js/test/fixtures/**"
+    ]
+  },
+  "author": "Joseph Stahl",
+  "license": "MIT",
+  "dependencies": {
+    "xml-stream": "^0.4.5"
+  },
+  "devDependencies": {
+    "@types/del": "^2.2.32",
+    "@types/gulp-sourcemaps": "0.0.29",
+    "@types/mkdirp": "^0.3.29",
+    "ava": "^0.18.2",
+    "del": "^2.2.2",
+    "eslint": "^3.16.0",
+    "eslint-config-airbnb-base": "^11.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-ava": "^0.16.0",
+    "gulp-sourcemaps": "^2.4.1",
+    "gulp-tslint": "^7.1.0",
+    "gulp-typescript": "^3.1.5",
+    "mkdirp": "^0.5.1",
+    "tslint": "^4.4.2",
+    "typescript": "^2.2.1"
+  }
+}
