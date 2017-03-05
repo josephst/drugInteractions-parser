@@ -4,7 +4,7 @@
   "description": "Drug Interaction graph: data parsing",
   "main": "js/app.js",
   "scripts": {
-    "start": "node js/bin/www.js",
+    "start": "node js/app.js",
     "test": "gulp test",
     "test:watch": "gulp test:watch"
   },
@@ -18,10 +18,13 @@
   "author": "Joseph Stahl",
   "license": "MIT",
   "dependencies": {
+    "axios": "^0.15.3",
+    "dotenv": "^4.0.0",
     "xml-stream": "^0.4.5"
   },
   "devDependencies": {
     "@types/del": "^2.2.32",
+    "@types/dotenv": "^2.0.20",
     "@types/gulp-sourcemaps": "0.0.29",
     "@types/mkdirp": "^0.3.29",
     "ava": "^0.18.2",

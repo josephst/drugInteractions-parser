@@ -1,7 +1,7 @@
 import { EventEmitter } from 'events';
 import * as fs from 'fs';
 import * as path from 'path';
-import * as xmlStream from 'xml-stream';
+import xmlStream = require('xml-stream');
 import { IDrugBankEntry, IDrugBankInteraction, IDrugPrimaryId } from './interfaces/DrugBank.d';
 import { IDrug, IDrugInteraction } from './interfaces/Models.d';
 
