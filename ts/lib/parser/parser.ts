@@ -84,6 +84,7 @@ export class Parser {
         this.inputStream.close();
       } else if (++splitCount === split) {
         this._emitter.emit('parsed', entries);
+        this.xml.pause();
         entries = [];
         splitCount = 0;
       }
@@ -93,5 +94,13 @@ export class Parser {
       this._emitter.emit('end');
       this.inputStream.close();
     });
+  }
+
+  public pause() {
+    this.xml.pause();
+  }
+
+  public resume() {
+    this.xml.resume();
   }
 };
