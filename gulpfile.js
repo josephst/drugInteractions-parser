@@ -28,7 +28,7 @@ gulp.task('scripts', ['clean:tests', 'clean:scripts'], () => {
   const tsResult = gulp.src(paths.source)
     .pipe(sourcemaps.init())
     .pipe(tsProject());
-  return tsResult.js.pipe(sourcemaps.write('.', { includeContent: false, destPath: './js' }))
+  return tsResult.js.pipe(sourcemaps.write('.', { destPath: './js' }))
     .pipe(gulp.dest('./js'));
 });
 

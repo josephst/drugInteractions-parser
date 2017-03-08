@@ -4,7 +4,9 @@
   "description": "Drug Interaction graph: data parsing",
   "main": "js/app.js",
   "scripts": {
-    "start": "gulp scripts && node js/app.js",
+    "prestart": "gulp scripts",
+    "pretest": "gulp scripts",
+    "start": "node js/app.js",
     "test": "gulp test",
     "test:watch": "gulp test:watch"
   },

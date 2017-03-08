@@ -81,6 +81,7 @@ export class Parser {
         this.xml.pause();
         this._emitter.emit('parsed', entries);
         this._emitter.emit('end');
+        entries = [];
         this.inputStream.close();
       } else if (++splitCount === split) {
         this._emitter.emit('parsed', entries);
